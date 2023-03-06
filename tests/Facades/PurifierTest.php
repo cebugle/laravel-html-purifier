@@ -1,10 +1,10 @@
 <?php
 
-namespace Mews\Tests\Purifier\Facades;
+namespace Cebugle\Tests\Purifier\Facades;
 
 use GrahamCampbell\TestBenchCore\FacadeTrait;
-use Mews\Purifier\Facades\Purifier;
-use Mews\Tests\Purifier\AbstractTestCase;
+use Cebugle\Purifier\Facades\Purifier;
+use Cebugle\Tests\Purifier\AbstractTestCase;
 
 class PurifierTest extends AbstractTestCase
 {
@@ -15,7 +15,7 @@ class PurifierTest extends AbstractTestCase
      *
      * @return string
      */
-    protected function getFacadeAccessor()
+    protected static function getFacadeAccessor(): string
     {
         return 'purifier';
     }
@@ -24,7 +24,7 @@ class PurifierTest extends AbstractTestCase
      *
      * @return string
      */
-    protected function getFacadeClass()
+    protected static function getFacadeClass(): string
     {
         return Purifier::class;
     }
@@ -33,8 +33,8 @@ class PurifierTest extends AbstractTestCase
      *
      * @return string
      */
-    protected function getFacadeRoot()
+    protected static function getFacadeRoot(): string
     {
-        return \Mews\Purifier\Purifier::class;
+        return \Cebugle\Purifier\Purifier::class;
     }
 }

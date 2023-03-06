@@ -1,9 +1,9 @@
 <?php
 
-namespace Mews\Tests\Purifier;
+namespace Cebugle\Tests\Purifier;
 
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
-use Mews\Purifier\PurifierServiceProvider;
+use Cebugle\Purifier\PurifierServiceProvider;
 
 abstract class AbstractTestCase extends AbstractPackageTestCase
 {
@@ -14,7 +14,7 @@ abstract class AbstractTestCase extends AbstractPackageTestCase
      *
      * @return string
      */
-    protected function getServiceProviderClass($app)
+    protected static function getServiceProviderClass(): string
     {
         return PurifierServiceProvider::class;
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mews\Purifier\Facades;
+namespace Cebugle\Purifier\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

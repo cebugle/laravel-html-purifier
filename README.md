@@ -1,11 +1,11 @@
-# HTMLPurifier for Laravel 5/6/7/8/9
+# HTMLPurifier for Laravel
 
 [![Build Status](https://travis-ci.org/mewebstudio/Purifier.svg?branch=master)](https://travis-ci.org/github/mewebstudio/Purifier)
 [![codecov](https://codecov.io/gh/mewebstudio/Purifier/branch/master/graph/badge.svg)](https://codecov.io/gh/mewebstudio/Purifier)
-[![Latest Stable Version](https://poser.pugx.org/mews/Purifier/v/stable.svg)](https://packagist.org/packages/mews/Purifier)
-[![Latest Unstable Version](https://poser.pugx.org/mews/Purifier/v/unstable.svg)](https://packagist.org/packages/mews/Purifier)
-[![License](https://poser.pugx.org/mews/Purifier/license.svg)](https://packagist.org/packages/mews/Purifier)
-[![Total Downloads](https://poser.pugx.org/mews/Purifier/downloads.svg)](https://packagist.org/packages/mews/Purifier)
+[![Latest Stable Version](https://poser.pugx.org/cebugle/laravel-html-purifier/v/stable.svg)](https://packagist.org/packages/cebugle/laravel-html-purifier)
+[![Latest Unstable Version](https://poser.pugx.org/cebugle/laravel-html-purifier/v/unstable.svg)](https://packagist.org/packages/cebugle/laravel-html-purifier)
+[![License](https://poser.pugx.org/cebugle/laravel-html-purifier/license.svg)](https://packagist.org/packages/cebugle/laravel-html-purifier)
+[![Total Downloads](https://poser.pugx.org/cebugle/laravel-html-purifier/downloads.svg)](https://packagist.org/packages/cebugle/laravel-html-purifier)
 
 A simple [Laravel](http://www.laravel.com/) service provider for easily using [HTMLPurifier](http://htmlpurifier.org/) inside Laravel. From their website:
 
@@ -13,43 +13,12 @@ A simple [Laravel](http://www.laravel.com/) service provider for easily using [H
 
 ## Installation
 
-### For Laravel 5.5+
-
 Require this package with composer:
 ```
-composer require mews/purifier
+composer require cebugle/laravel-html-purifier
 ```
 
-The service provider will be auto-discovered. You do not need to add the provider anywhere. 
-
-### For Laravel 5.0 to 5.4
-
-Require this package with composer:
-```
-composer require mews/purifier
-```
-
-Find the `providers` key in `config/app.php` and register the HTMLPurifier Service Provider.
-
-```php
-    'providers' => [
-        // ...
-        Mews\Purifier\PurifierServiceProvider::class,
-    ]
-```
-
-Find the `aliases` key in `config/app.php` and register the Purifier alias.
-
-```php
-    'aliases' => [
-        // ...
-        'Purifier' => Mews\Purifier\Facades\Purifier::class,
-    ]
-```
-
-### For Laravel 4
-
-Check out [HTMLPurifier for Laravel 4](https://github.com/mewebstudio/Purifier/tree/master-l4)
+The service provider will be auto-discovered. You do not need to add the provider anywhere.
 
 
 ## Usage
@@ -95,9 +64,9 @@ Alternatively, in Laravel 7+, if you're looking to clean your HTML inside your E
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Mews\Purifier\Casts\CleanHtml;
-use Mews\Purifier\Casts\CleanHtmlInput;
-use Mews\Purifier\Casts\CleanHtmlOutput;
+use Cebugle\Purifier\Casts\CleanHtml;
+use Cebugle\Purifier\Casts\CleanHtmlInput;
+use Cebugle\Purifier\Casts\CleanHtmlOutput;
 
 class Monster extends Model
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mews\Purifier;
+namespace Cebugle\Purifier;
 
 /**
  * Laravel 5 HTMLPurifier package

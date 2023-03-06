@@ -1,6 +1,6 @@
 <?php
 
-namespace Mews\Purifier\Casts;
+namespace Cebugle\Purifier\Casts;
 
 trait WithConfig
 {

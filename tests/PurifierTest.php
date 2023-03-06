@@ -1,12 +1,12 @@
 <?php
 
-namespace Mews\Tests\Purifier;
+namespace Cebugle\Tests\Purifier;
 
 use HTMLPurifier;
 use HTMLPurifier_Config;
 use Illuminate\Config\Repository;
 use Illuminate\Filesystem\Filesystem;
-use Mews\Purifier\Purifier;
+use Cebugle\Purifier\Purifier;
 
 class PurifierTest extends AbstractTestCase
 {

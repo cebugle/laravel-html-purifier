@@ -1,9 +1,9 @@
 <?php
 
-namespace Mews\Tests\Purifier;
+namespace Cebugle\Tests\Purifier;
 
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
-use Mews\Purifier\Purifier;
+use Cebugle\Purifier\Purifier;
 
 class ServiceProviderTest extends AbstractTestCase
 {
