@@ -45,10 +45,10 @@
   "extra": {
     "laravel": {
       "providers": [
-          "Mews\\Purifier\\PurifierServiceProvider"
+          "Cebugle\\Purifier\\PurifierServiceProvider"
       ],
       "aliases": {
-          "Purifier": "Mews\\Purifier\\Facades\\Purifier"
+          "Purifier": "Cebugle\\Purifier\\Facades\\Purifier"
       }
     }
   },
